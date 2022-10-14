@@ -12,6 +12,14 @@ class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
 
+    public function facturas(){
+        return $this-hasMany('App\Models\Factura');
+    }
+
+    public function user (){
+        return $this-belongsT('App\Models\User');
+    }
+
     /**
      * The attributes that are mass assignable.
      *
