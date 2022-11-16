@@ -5,7 +5,7 @@ use App\Http\Controllers\DetallesController;
 use App\Http\Controllers\FacturasController;
 use App\Http\Controllers\PagosController;
 use App\Http\Controllers\PrendasController;
-use App\Http\Controllers\UsersController;
+
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\SessionsController;
 
