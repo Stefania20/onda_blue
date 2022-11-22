@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PrendasController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,3 +21,6 @@ Route::get('/', function () {
 Route::get('/index', function () {
     return view('index');
 });
+
+
+Route::resource("prendas", "PrendasController")->parameters(["prendas"=>"prenda"]);
